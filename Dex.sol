@@ -1,10 +1,8 @@
 //SPDX-License-Identifier: <SPDX-License>
 
 pragma solidity 0.8.0;
-pragma experimental ABIEncoderV2;
 
 import '@openzeppelin/contracts/token/ERC20/IERC20.sol';
-//import '@openzeppelin/contracts/math/SafeMath.sol';
 
 contract Dex {
    
@@ -53,7 +51,7 @@ contract Dex {
         uint price,
         uint date);
     
-    constructor() public {
+    constructor() {
         admin = msg.sender;
     }
     
